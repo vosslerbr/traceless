@@ -9,8 +9,9 @@
 body {
     font-family: var(--mainFont);
     background-color: var(--brandWhite);
-    margin: 0 6rem;
+    margin: 0 1rem;
     background-image: url(img/Group\ 1.svg);
+    background-repeat: repeat-y;
     background-size: contain;
 }
 
@@ -31,8 +32,21 @@ span {
     font-weight: 400;
 }
 
-nav ul {
+#hamburger {
+    height: 35px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-line {
+    width: 44px;
+    height: 4px;
+    background-color: var(--brandRed);
+}
+
+nav ul {
+    display: none;
     flex-direction: row;
 }
 
@@ -49,20 +63,28 @@ nav li {
 
 header {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-top: 3rem;
 }
 
+#header-img {
+    width: 60vw;
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
 #header-info {
-    max-width: 440px;
+    width: 100vw;
     color: var(--brandBlue);
+    font-size: 0.85rem;
     font-weight: 700;
+    text-align: center;
 }
 
 #header-info p {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 2rem;
 }
 
@@ -73,15 +95,15 @@ header {
     background-color: var(--brandRed);
     padding: 1rem 2rem;
     border-radius: 1rem;
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 #about {
-    margin: 10rem 0;
+    margin: 10rem auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
 }
 
 figure {
