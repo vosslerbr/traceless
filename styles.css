@@ -9,7 +9,7 @@
 body {
     font-family: var(--mainFont);
     background-color: var(--brandWhite);
-    margin: 0 1rem;
+    margin: 0 6rem;
 }
 
 nav {
@@ -49,11 +49,29 @@ header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     margin-top: 3rem;
 }
 
 #header-info {
     max-width: 440px;
+    color: var(--brandBlue);
+    font-weight: 700;
+}
+
+#header-info p {
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+
+#header-info a {
+    display: inline-block;
+    color: var(--brandWhite);
+    text-decoration: none;
+    background-color: var(--brandRed);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-top: 6rem;
 }
 
 #about {
