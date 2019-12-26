@@ -10,6 +10,8 @@ body {
     font-family: var(--mainFont);
     background-color: var(--brandWhite);
     margin: 0 6rem;
+    background-image: url(img/Group\ 1.svg);
+    background-size: contain;
 }
 
 nav {
@@ -75,13 +77,28 @@ header {
 }
 
 #about {
+    margin: 10rem 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin: 2rem 0;
+    color: var(--brandBlue);
+}
+
+#pricing {
+    margin: 10rem 0;
 }
 
 #pricing-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-
