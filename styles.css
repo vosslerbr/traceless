@@ -41,7 +41,8 @@ span {
 
 .hamburger-line {
     width: 44px;
-    height: 4px;
+    height: 5px;
+    border-radius: 200px;
     background-color: var(--brandRed);
 }
 
@@ -70,7 +71,7 @@ header {
 }
 
 #header-img {
-    width: 60vw;
+    width: 70vw;
     max-width: 400px;
     margin-bottom: 2rem;
 }
@@ -94,7 +95,7 @@ header {
     text-decoration: none;
     background-color: var(--brandRed);
     padding: 1rem 2rem;
-    border-radius: 1rem;
+    border-radius: 200px;
     margin-top: 2rem;
 }
 
@@ -113,14 +114,95 @@ figure {
 figcaption {
     margin: 2rem 0;
     color: var(--brandBlue);
+    line-height: 1.75rem;
 }
 
 #pricing {
-    margin: 10rem 0;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--brandBlue);
 }
 
 #pricing-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    width: 90vw;
+    
+}
+
+.pricing-item {
+    padding: 2rem 2rem 3rem 2rem;
+    background-color: var(--brandBlue);
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--brandWhite);
+    border-radius: 1.25rem;
+}
+
+.pricing-item a {
+    text-decoration: none;
+    color: var(--brandWhite);
+    background-color: var(--brandRed);
+    padding: 1rem 4rem;
+    border-radius: 300px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.non-emphasized {
+    background-color: transparent;
+    color: var(--brandBlue);
+}
+
+.non-emphasized a {
+    text-decoration: none;
+    color: var(--brandWhite);
+    background-color: var(--brandGray);
+    padding: 1rem 4rem;
+    border-radius: 300px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.non-emphasized a:hover {
+    box-shadow: 2px 2px 20px rgba(118, 149, 173, 0.459);
+    transform: translateY(4px);
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-item-desc {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+
+.price {
+    font-size: 4rem;
+    margin: 3rem 0 0 0;
+    font-weight: 700;
+}
+
+.price-monthly {
+    margin: 0;
+}
+
+.pricing-item ul {
+    text-align: center;
+    margin: 3rem 0 4rem 0;
+    line-height: 3rem;
+    list-style: none;
+    padding: 0;
 }
