@@ -9,17 +9,25 @@
 body {
     font-family: var(--mainFont);
     background-color: var(--brandWhite);
-    margin: 0 1rem;
     background-image: url(img/Group\ 1.svg);
     background-repeat: repeat-y;
     background-size: contain;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: var(--brandBlue);
+  color: var(--brandWhite); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0.67rem; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  box-shadow: -2px 0px 10px #7695AD;
+  border-radius: 20px 0 0 20px;
 }
 
 h1 {
@@ -32,11 +40,22 @@ span {
     font-weight: 400;
 }
 
+#logo-hamburger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-right: 0;
+    transition: 0.5s;
+}
+
 #hamburger {
     height: 35px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: auto;
+    position: relative;
 }
 
 .hamburger-line {
@@ -47,19 +66,19 @@ span {
 }
 
 nav ul {
-    display: none;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--brandBlue);
+    color: var(--brandRed);
 }
 
 nav li {
-    margin-left: 4rem;
     list-style: none;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 header {
@@ -68,6 +87,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 3rem;
+    padding: 0 1rem;
 }
 
 #header-img {
@@ -97,6 +117,7 @@ header {
     padding: 1rem 2rem;
     border-radius: 200px;
     margin-top: 2rem;
+    font-size: 1.25rem;
 }
 
 #about {
@@ -105,6 +126,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 }
 
 figure {
@@ -123,6 +145,7 @@ figcaption {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 }
 
 h2 {
@@ -145,6 +168,8 @@ h2 {
     margin-bottom: 4rem;
     color: var(--brandWhite);
     border-radius: 1.25rem;
+    max-width: 450px;
+    margin: auto;
 }
 
 .pricing-item a {
@@ -163,18 +188,17 @@ h2 {
 }
 
 .non-emphasized a {
-    text-decoration: none;
+    display: inline-block;
     color: var(--brandWhite);
-    background-color: var(--brandGray);
-    padding: 1rem 4rem;
-    border-radius: 300px;
-    font-size: 1.25rem;
-    font-weight: 700;
+    text-decoration: none;
+    background-color: var(--brandBlue);
+    padding: 1rem 2rem;
+    border-radius: 200px;
 }
 
 .non-emphasized a:hover {
     box-shadow: 2px 2px 20px rgba(118, 149, 173, 0.459);
-    transform: translateY(4px);
+    transform: translateY(1px);
 }
 
 h3 {
@@ -205,4 +229,43 @@ h3 {
     line-height: 3rem;
     list-style: none;
     padding: 0;
+}
+
+footer {
+    background-color: var(--brandRed);
+    color: var(--brandWhite);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+footer li {
+    margin-bottom: 1rem;
+}
+
+footer div {
+    display: flex;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+footer div a {
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1rem;
+    border-radius: 400px;
+    border: 2px solid var(--brandWhite);
 }
