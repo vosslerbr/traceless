@@ -1,7 +1,7 @@
 const hamburgerMenu = document.getElementById('hamburger');
 
 hamburgerMenu.addEventListener('click', function() {
-    const nav = document.getElementById('nav');
+    const nav = document.getElementById('mobile-nav');
     const logoHamburger = document.getElementById('logo-hamburger')
     if (nav.style.width === '220px') {
         nav.style.width = 0;
