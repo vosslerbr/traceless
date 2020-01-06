@@ -15,25 +15,30 @@ body {
 }
 
 nav {
-  height: 100vh; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100vh; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
   right: 0;
   background-color: var(--brandBlue);
-  color: var(--brandWhite); /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0.67rem; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  color: var(--brandWhite);
+  overflow-x: hidden;
+  padding-top: 0.67rem;
+  transition: 0.5s;
   box-shadow: -2px 0px 10px #7695AD;
-  border-radius: 20px 0 0 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
 }
 
 h1 {
     font-size: 2.5rem;
     color: var(--brandRed);
     font-weight: 800;
+    margin: 1rem 0;
 }
 
 span {
@@ -41,11 +46,12 @@ span {
 }
 
 #logo-hamburger {
+    position: relative;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
-    margin-right: 0;
+    padding: 0 1rem;
     transition: 0.5s;
 }
 
@@ -86,7 +92,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 8rem;
     padding: 0 1rem;
 }
 
@@ -107,6 +113,7 @@ header {
 #header-info p {
     margin-bottom: 1rem;
     line-height: 2rem;
+    padding: 0 1rem;
 }
 
 #header-info a {
@@ -151,6 +158,7 @@ figcaption {
 h2 {
     font-size: 2.5rem;
     color: var(--brandBlue);
+    text-align: center;
 }
 
 #pricing-container {
@@ -168,8 +176,9 @@ h2 {
     margin-bottom: 4rem;
     color: var(--brandWhite);
     border-radius: 1.25rem;
+    width: auto;
     max-width: 450px;
-    margin: auto;
+    margin: 0 auto 2rem auto;
 }
 
 .pricing-item a {
@@ -185,6 +194,7 @@ h2 {
 .non-emphasized {
     background-color: transparent;
     color: var(--brandBlue);
+    border: 1px solid var(--brandBlue);
 }
 
 .non-emphasized a {
@@ -211,6 +221,7 @@ h3 {
     font-size: 0.85rem;
     line-height: 1.5rem;
     margin-top: 2rem;
+    max-width: 350px;
 }
 
 .price {
